@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <link rel="stylesheet" href="./About_us.css">
+    </head>
+
+    <body>
+        <h2>Testing out our sidemenu that will show up when clicked open</h2>
+    <!--Side bar navigation menu-->
+    <div id="SIDEBAR" class="bar" onmouseleave="closesidebar()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closesidebar()">&times;</a>
+        <a href="#">Team</a>
+        <a href="#">Gallery</a>
+        <a href="#">Roadmap</a>
+    </div>
+    
+    <!--Creating an element to open the side bar menu, to replace with an icon-->
+    <span onmouseover="opensidebar()">open</span>
+
+    <script src="About_us.js"></script>
+
+    </body>
+</html>

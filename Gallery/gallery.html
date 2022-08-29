@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./gallery.css">
+    </head>
+
+    <body>
+        <div class="header"><h1>Gallery</h1></div>
+        <hr>
+        <div id="mybtn">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('human')"> Human</button>
+            <button class="btn" onclick="filterSelection('background')"> Background</button>
+        </div>
+        <div class="row">
+            <div class="column human">
+                <div class="content">
+                    <img src="./diluc.jpg" style="width:100%">
+                </div>
+            </div>
+
+            <div class="column background">
+                <div class="content">
+                <img src="./liyue bg.jpg" style="width:100%">
+                </div>   
+            </div> 
+        </div>
+
+        <script src="./gallery.js"></script>
+    </body>
+
+</html>
