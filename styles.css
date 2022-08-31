@@ -1,0 +1,213 @@
+/*text's styles*/
+body {
+    background-color: #004742;
+    color: white;
+    font-family: cursive;
+}
+h1 {
+    font-size: 700%;
+    text-align: center;
+    
+}
+h1.words {
+    font-size: 200%;
+    text-align: center;
+    grid-area: words;
+    color: red;
+    animation: animatedwords 5s infinite;
+}
+h2.profilesfont {
+    font-size: 200%;
+    color: black;
+    text-align: center;
+    padding-top: 30%;
+}
+h2.bubblesfont {
+    padding-top: 33%;
+    font-size: 100%;
+    text-align: center;
+}
+h2.smallbubblesfont {
+    padding-top: 30%;
+    font-size: 80%;
+    text-align: center;
+}
+/*animated words*/
+@keyframes animatedwords {
+    100% {color: blue;}
+}
+p {
+    font-size: 150%;
+    text-align: right;
+    margin-right: 25%;
+    margin-top: -3%;
+}
+pre {
+    font-size: 200%;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+/*link's styles*/
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+    font-weight: 900;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*navigation panel's styles*/
+.navpanel {
+    height: 100%;
+    width:0%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 3%;
+    transition: 0.5s;
+}
+.navpanel a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    color: #004742;
+    display: block;
+    transition: 0.5s;
+    margin-top: 0.5cm;
+}
+.navpanel a:hover{
+    background-color: #004742;
+    color: white;
+}
+.navpanel .closebtn{
+    position: absolute;
+    top: 0%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.navpanel .closebtn:hover{
+    background-color: transparent;
+    color: #004742;
+    font-weight: bolder;
+}
+.openbtn {
+    font-size: 200%;
+    cursor: pointer;
+    background-color: lightgrey;
+    color: #004742;
+    border-color: transparent;
+    border-radius: 10%;
+    margin-left: 0%;
+    margin-top: 20%;
+}
+.openbtn:hover{
+    background-color: grey;
+}
+
+/*bubbles on team page*/
+.container {
+    position: fixed;
+    top: 1cm;
+    bottom: 1cm;
+    left: 5cm;
+    right: 0cm;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template: 
+    '. . . pic1 . . . . pic2 . . .'
+    '. . . pic1 bubble1 bubble1 . . . . . .'
+    'profile1 profile1 profile1 . bubble1 bubble1 profile2 profile2 profile2 bubble2 bubble2 .'
+    'profile1 profile1 profile1 smallBubble1 bubble1 bubble1 profile2 profile2 profile2 bubble2 bubble2 .'
+    'profile1 profile1 profile1 profile3 profile3 profile3 profile2 profile2 profile2 profile4 profile4 profile4'
+    'smallBubble2 word word profile3 profile3 profile3 . bubble3 bubble3 profile4 profile4 profile4'
+    '. word word profile3 profile3 profile3 pic3 bubble3 bubble3 profile4 profile4 profile4'
+    '. . bubble4 bubble4 . . pic3 bubble3 bubble3 smallBubble3 . pic4';
+}
+.profiles {
+    border-radius: 50%;
+    height: 8cm;
+    width: 8cm;
+    background-color: white;
+    color: black;
+}
+.smallbubbles {
+    border-radius: 50%;
+    height: 2.5cm;
+    width: 2.5cm;
+    background-color: black;
+}
+.pics {
+    border-radius: 50%;
+    height: 3cm;
+    width: 3cm;
+    background-color: red;
+}
+.bubbles {
+    border-radius: 50%;
+    height: 4cm;
+    width: 4cm;
+    background-color: blue;
+}
+/*asigning grid area to each ID*/
+#profile1 {
+    grid-area: profile1;
+}
+#profile2 {
+    grid-area: profile2;
+}
+#profile3 {
+    grid-area: profile3;
+}
+#profile4 {
+    grid-area: profile4;
+}
+#word {
+    grid-area: word;
+}
+#smallBubble1 {
+    grid-area: smallBubble1;
+}
+#smallBubble2 {
+    grid-area: smallBubble2;
+}
+#smallBubble3 {
+    grid-area: smallBubble3;
+}
+#pic1 {
+    grid-area: pic1;
+}
+#pic2 {
+    grid-area: pic2;
+}
+#pic3 {
+    grid-area: pic3;
+}
+#pic4 {
+    grid-area: pic4;
+}
+#bubble1 {
+    grid-area: bubble1;
+}
+#bubble2 {
+    grid-area: bubble2;
+}
+#bubble3 {
+    grid-area: bubble3;
+}
+#bubble4 {
+    grid-area: bubble4;
+}
