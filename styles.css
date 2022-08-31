@@ -16,12 +16,6 @@ h1.words {
     color: red;
     animation: animatedwords 5s infinite;
 }
-h2.profilesfont {
-    font-size: 200%;
-    color: black;
-    text-align: center;
-    padding-top: 30%;
-}
 h2.bubblesfont {
     padding-top: 33%;
     font-size: 100%;
@@ -141,8 +135,34 @@ a:visited {
     border-radius: 50%;
     height: 8cm;
     width: 8cm;
+    background-color: transparent;
+    perspective: 1000px;
+}
+.profiles-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.profiles:hover .profiles-inner{
+    transform: rotateY(180deg);
+}
+.profiles-front, .profiles-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.profiles-back {
+    border-radius: 50%;
     background-color: white;
+    transform: rotateY(180deg);
+    font-size: 200%;
     color: black;
+    text-align: center;
 }
 .smallbubbles {
     border-radius: 50%;
