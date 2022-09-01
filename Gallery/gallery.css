@@ -16,6 +16,7 @@ body{
     float: left;
     width: 33%;
     padding: 10px;
+    display: none; /*to hide the elements if not needed*/
 }
 
 .column img {
@@ -38,8 +39,13 @@ body{
 }
 
 .btn:active {
-    background-color: antiquewhite;
-    color: white;
+    background-color: rgb(182, 124, 47);
+    color: rgb(206, 34, 34);
 }
 
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+  }
+  
 
