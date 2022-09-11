@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--slider-->
+    <div class="roadmap">
+        <input type="range" min="1" max="5" value="1" class="pointer" id="myPointer">
+    </div>
+    <!--dates-->
+    <table>
+        <tr>
+            <th>1<sup>st</sup> January 2022</th>
+            <th>1<sup>st</sup> March 2022</th>
+            <th>1<sup>st</sup> May 2022</th>
+            <th>1<sup>st</sup> July 2022</th>
+            <th>1<sup>st</sup> September 2022</th>
+        </tr>
+    </table>
+    <!--show content-->
+    <div class="eventcontainer" id="myEvent">
+        <p>Value is <span id="myValue"></span></p>
+        <p class="event 1">this is the event on 1/1/2022 blablabla...</p>
+        <p class="event 2">this is the event on 1/3/2022 blablabla...</p>
+        <p class="event 3">this is the event on 1/5/2022 blablabla...</p>
+        <p class="event 4">this is the event on 1/7/2022 blablabla...</p>
+        <p class="event 5">this is the event on 1/9/2022 blablabla...</p> 
+    </div>
+    
+    <script src="functions.js"></script>
+</body>
+</html>
