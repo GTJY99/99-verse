@@ -1,10 +1,9 @@
-
-var casenumber = document.getElementById("myPointer").value;
-
+var casenumber = document.getElementById("myPointer")
+document.getElementById("event").innerHTML = "On this day, this group is formed..."
 //switch case to identify event
-  function showEvent() {
-    var timeline;
-    switch (casenumber) {
+casenumber.oninput = function () {
+  var timeline;
+    switch (casenumber.value) {
       case "1":
         timeline = "On this day, this group is formed..."
         break;
@@ -14,7 +13,8 @@ var casenumber = document.getElementById("myPointer").value;
       default:
         timeline = "nothing"
     }
-    return timeline;
-  }
-  document.getElementById("event").innerHTML = showEvent();
+    document.getElementById("event").innerHTML = timeline;
+}
+
+
 
